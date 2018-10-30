@@ -1,0 +1,379 @@
+//core java 7
+Q. Pick up the valid statement to execute the following sql query
+PreparedStatement pstmt = con.prepareStatement("insert into student values(?,?));
+pstmt.setString(1,"Asha");
+pstmt.setString(2,"Basha");
+1). ResutlSet rs = pstmt.executeQuery();
+2). Pstmt.executeQuery();
+3). ResultSet rs = pstmt.executeUpdate();
+4). None of the above
+Solution :
+option [4] is correct
+
+Which of the following are pure java drivers ?
+1). Type 1 – JDBC-ODBC Bridge 
+2). Type 2 – Java Native API
+3). Type 3 – Java to Network Protocol
+4). Type 4 – Java to Database Protocol
+Solution :
+option [3,4] are correct
+
+Q. Which of the given method of Properties class is used to read, key and value pair from input binary stream?
+1). load(InputStream stream)
+2). load(Reader reader)
+3). getProperty(String str)
+4). getProperty(String str,String default);
+Solution :
+option [1] is correct
+
+Q. What is true about Connection Pooling?          
+1). It increase the performance system
+2). It promotes reusability
+3). Connection pool implementation not disconnect the link with the database even 
+     though client close the connection
+4). All the above
+Solution :
+option [4] is correct
+
+Q. Which of the following code snippet is most appropriate to roll back the transaction 
+when an error occurs in the transaction?                                             
+1). conn.setAutoCommit(false);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(true);
+      conn .rollback() ;
+2). try {
+           conn.setAutoCommit(false);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(true);
+      } catch (SQLException e) {
+     conn .rollback() ;
+    }
+3). try {
+           conn.setAutoCommit(true);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(false);
+      } catch (SQLException e) {
+     conn .rollback() ;
+    }
+4). Transaction cannot be rolled back
+Solution :
+option [2] is correct
+
+
+Q. ResultSet rs = stmt.executQuery("SELECT name, rank, serialNo FROM          employee");
+Which of the following will get the value of 'name' from the  above ResultSet rs?
+1). rs.getString(0)
+2). rs.getString(1)
+3). rs.getString("name")
+4). None of the above
+Solution :
+option [2,3] are correct
+
+Q. Which of the following methods of ResultSet interface helps in retrieving the type 
+of each column in the resultSet?        
+1). getData()
+2). getMetaData()
+3). getType()
+4). getColumnType()
+Solution :
+option [2] is correct
+
+Q. Which of the following are the interfaces in JDBC API?
+1). DriverManager
+2). PreparedStatement
+3). Connection
+4). ResultSet
+5). Statement
+Solution :
+option [2,3,4,5] are correct
+
+Q. Which of the following methods is best suitable for executing a DML statement? 
+1). executeQuery()
+2). executeUpdate()
+3). execute()
+4). getResultSet()
+Solution :
+option [2] is correct
+
+Q. The scenario where you want to take data from user each time differently, this data 
+you want to pass as an argument to the SQL query. Which of the following statement 
+you will use to execute such query 
+1). Statement
+2). PreparedStatement
+3). CallableStatement
+4). All the above
+Solution :
+option [2] is correct
+//java 6
+Q. Which of the given option is correct for adding exception to the test method given below?
+Public void divideByZeroTest(){
+calobj.divide(15,0);
+} Note : calobj is an object of Calculate class which contains divide(int x,int y) method.
+1). @Test(expected = ArithmeticException.class)
+2). @Test( ArithmeticException.class)
+3). @Before( ArithmeticException.class)
+4). @Before(expected = ArithmeticException.class)
+Solution :
+option [1] is correct
+
+Q. Which of the following classes in java.io are abstract classes?
+1). Reader
+2). Writer
+3). InputStream
+4). File
+Solution :
+option [1,2,3] are correct
+
+Q. Which of the following methods of the File class will delete a directory or file?
+1). The file class does not allow you to delete a file or directory
+2). remove()
+3). delete()
+4). deleteFile()
+Solution :
+option [3] is correct
+
+Q. Consider the following code snippet:
+
+public class Calculator {
+        public long add (long number1, long number2){
+   return number1 + number2; 
+}
+}
+
+public class CalculatorTest {
+     @Test
+ public void add() throws Exception {
+  Calculator cal=new Calculator();
+  assertEquals(4, calculator.add(1,3));
+}
+}
+
+The above code returns an error. What change needs to be done in order to run 
+the test successfully.         
+1). There is no error in the code above
+2). The TestCase class has not been extended hence it not recognized as a Test class
+3). Change the assertEquals method to assertTrue
+4). The assertEqauls method should be written as assertEquals ((long)4,calculator.add(1,3));
+Solution :
+option [4] is correct
+
+Q. class Demo{
+public static void main(String []args){
+Path javaHome = Paths.get("C:/Program Files/Java/jdk1.8.0_25");
+  System.out.println(javaHome.getNameCount());}
+}What will be the output of above code?
+1). 1
+2). 2
+3). 3
+4). 4
+Solution :
+option [3] is correct
+
+Q. Which of the following piece of code needs to be inserted so that the program prints 
+the contents of filereader.java?         
+
+import java.io.*;
+
+class FileReader
+{
+    public static void main(String args[]) throws Exception
+    {
+        //Insert code here
+
+        char data[] = new char[1024];
+        int charsRead = fileReader.read(data);
+        System.out.println(new String(data, 0 , charsRead));
+
+        fileReader.close();
+    }
+}
+1). FileInputStream fileReader=new FileInputStream("C:\\myjavacourse\\src\\filereader.java");
+2). FileReader fileReader = new FileReader("C:\\myjavacourse\\src\\filereader.java");
+3). Both a and b can be used
+4). None of the above is correct
+Solution :
+option [2] is correct
+
+Q. Which of the following I/O classes helps you in persistence storage of Objects? 
+1). ObjectOutputStream
+2). DataOutputStream
+3). FileWriter
+4). ObjectWriter
+Solution :
+option [1] is correct
+
+Q. JUnit is used for __________  in Java Application.
+1). Integration Testing
+2). Code Review
+3). Unit Testing
+4). Black Box Testing
+Solution :
+option [3] is correct
+
+Q. Which of the following correctly illustrate how an InputStreamReader can be created?           
+1). new InputStreamReader(new FileInputStream("data")); 
+2). new InputStreamReader(new FileReader("data")); 
+3). new InputStreamReader("data"); 
+4). new InputStreamReader(System.in);
+Solution :
+option [1,4] are correct
+
+Q. Which of the following correctly illustrate how an InputStreamReader can be created?           
+1). new InputStreamReader(new FileInputStream("data")); 
+2). new InputStreamReader(new FileReader("data")); 
+3). new InputStreamReader("data"); 
+4). new InputStreamReader(System.in);
+Solution :
+option [1,4] are correct
+
+Q. Which of the given annotation is used to do initialization of some task before each test run ?
+1). @Test
+2). @After
+3). @BeforeClass
+4). @Before
+Solution :
+option [4] is correct
+
+//java 8
+Q. Which of the given is the correct implementation of Test suites?
+1). import org.junit.runner.RunWith; 
+import org.junit.runners.Suite; 
+@RunWith 
+@Suite.SuiteClasses({ TestCalAdd.class, TestCalSubtract.class, 
+TestCalMultiply.class, TestCalDivide.class }) 
+public class CalSuite { 
+
+} 
+2). import org.junit.runner.RunWith; 
+import org.junit.runners.Suite; 
+@RunWith(Suite.class) 
+@Suite.SuiteClasses({ TestCalAdd.class, TestCalSubtract.class, 
+TestCalMultiply.class, TestCalDivide.class }) 
+public class CalSuite { 
+
+} 
+3). import org.junit.runner.RunWith; 
+import org.junit.runners.Suite; 
+@Run(Suite.class) 
+@Suite.SuiteClasses({ TestCalAdd.class, TestCalSubtract.class, 
+TestCalMultiply.class, TestCalDivide.class }) 
+public class CalSuite { 
+// the class remains completely empty, 
+// being used only as a holder for the above annotations 
+} 
+4). import org.junit.runner.RunWith; 
+import org.junit.runners.Suite; 
+
+@Suite.SuiteClasses({ TestCalAdd.class, TestCalSubtract.class, 
+TestCalMultiply.class, TestCalDivide.class }) 
+public class CalSuite { 
+// the class remains completely empty, 
+// being used only as a holder for the above annotations 
+} 
+Solution :
+option [2] is correct
+
+Q. Rima wants to validate user's credential before showing the account details back to user, in online banking application, in which of the given layer she can validate the user's credential? 
+1). Presentation Layer
+2). Business Layer
+3). DataAccessLayer
+4). ServiceLayer
+Solution :
+option [2] is correct
+
+Q. @RunWith(Suite.class) 
+@Suite.SuiteClasses({ TestPerson.class, TestPerson2.class,TestPersonFixture.class}) 
+public class TestPersonSuite {
+
+ @BeforeClass
+ public static void setUpBeforeClass() throws Exception {
+  System.out.println("Now running the Test Suite");
+ }
+ @AfterClass
+ public static void tearDownAfterClass() throws Exception {
+  System.out.println("The Test Suite is completed");
+ }
+
+}What is true about above code?
+1). It will run three test classes in a group
+2). @BeforeClass causes  the method to be run once before any of the test methods in the class.
+3). Annotating a public static void method with @AfterClass causes that method to be run after all the tests in the class have been run.
+4). @BeforeClass method will run only once at before testing starts. 
+Solution :
+option [1,2,3] are correct
+
+Q. Choose the correct statements about parameterized test.
+1). It allows to run the same test with different parameters
+2). It can be specified as given below
+@RunWith(Parameterized.class)
+3). To use it, we need to add static method which returns collection of data 
+4). It can be done with @RunWith(Suite.class)
+Solution :
+option [1,2,3] are correct
+
+Q. Which of the given statement is true about DTO?
+1). It is used to encapsulate business data
+2). It abstracts the logic to access underlying data store
+3). It is concerned about retrieval,management,processing of application data
+4). It is defined to accept user inputs
+Solution :
+option [1] is correct
+
+Q. Which of the given statement is true about org.junit.runners.Suite class?
+1). It runs group of test cases
+2). It specifies runner class to run the annotated class
+3). both 0 and 1
+4). none of the above
+Solution :
+option [1] is correct
+
+Q. Which of the below annotation is used to test with different parameters?
+1). @Parameterized.parameter
+2). @RunWith(Parameterized.class)
+3). @Test(Parameterized.class)
+4). @Test.parameter
+Solution :
+option [1,2] are correct
+
+Q. Which of the given statement is true about org.junit.runners.Suite class?
+1). It runs group of test cases
+2). It specifies runner class to run the annotated class
+3). both 0 and 1
+4). none of the above
+Solution :
+option [1] is correct
+
+Q. Which of the given statement is true about org.junit.runners.Suite class?
+1). It runs group of test cases
+2). It specifies runner class to run the annotated class
+3). both 0 and 1
+4). none of the above
+Solution :
+option [1] is correct
+
+Q. Which of the given statements represents business layer in layered architecture?
+1). Layer in which business methods are implemented
+2). Business layer implementation is hidden from user only interface is given to user
+3). Business layer implementation is accessible to user
+4). Business layer contains implementation for accessing and getting connected with database.
+Solution :
+option [1,2] are correct
+
+Q. Which of the given method is used to create EasyMock?
+1). EasyMock.createMock();
+2). EasyMock.createMock(Classname.class);
+3). EasyMock mock = new EasyMock();
+4). EasyMock mock = new EasyMock(Classname.class);
+Solution :
+option [2] is correct
+
+Q. Which of the given options are mock frameworks?
+1). DynaMock
+2). Jmock
+3). EasyMock
+4). StaticMock
+Solution :
+option [1,2,3] are correct
