@@ -1,0 +1,241 @@
+[?10/?31/?2018 2:39 PM]  SOUDEY, ROHAN:  
+JEE JSP DQ Day 1	
+JEE JSP DQ Day 2	
+
+JEE Servlets DQ Day 1	
+JEE Servlets DQ Day 2	
+JEE Servlets DQ Day 3	
+
+JEE Spring DQ Day 1	
+JEE Spring DQ Day 2	
+JEE Spring DQ Day 3	
+JEE Spring DQ Day 4	
+JEE Spring DQ Day 5	 
+
+
+L1 JEE Mod 3 Practice Test	
+L1 JEE Mod 4 Practice Test	 
+
+
+
+[?10/?31/?2018 3:39 PM]  N, Kathiresan:  
+package com.cg.frs.dao;
+
+public class Test {
+
+	public  Test(){
+	//	this();
+	System.out.println("constr");	
+	}
+	Test(int a){
+		this();
+		System.out.println("a value : "+a);
+	}
+	
+	public void Test() {
+		
+		System.out.println("this is cnstr?");
+	}
+	
+	
+	public static void main(String[] args) {
+		Test t=new Test();
+		t.Test();
+	}
+
+} 
+ 
+[?10/?31/?2018 3:44 PM]  N, Kathiresan:  
+package com.cg.frs.dao;
+
+public class Test {
+
+	public  Test(){
+	//	this();
+	System.out.println("constr");	
+	}
+	Test(int a){
+		this();
+		System.out.println("a value : "+a);
+	}
+	
+	
+	public void Test() {
+		
+		System.out.println("this is cnstr?");
+	}
+	
+	static {
+		System.out.println("in block 1");
+	}	
+	public static void main(String[] args) {
+		Test t=new Test();
+		t.Test();
+	}
+static {
+	System.out.println("in block 2");
+}
+} 
+ 
+----------------------------------------------------
+[?10/?31/?2018 3:50 PM]  N, Kathiresan:  
+		/*int a=(int) 9.505f;
+		System.out.println(a);
+		*/
+		/*float a=9f;
+		System.out.println(a);*/
+		/*int a='F';
+		System.out.println(a);
+		*/
+		char a=122;
+		System.out.println(a); 
+
+
+-----------------------------------------------------
+
+	
+		Object ob=null;
+		ob=new Object();
+		ob=new String("hello");
+		ob=new Integer("10");
+		Integer i=(Integer)ob;
+	
+		String s2="hello";
+		String s1="hello";
+		String s=new String("hello");
+		
+		System.out.println(s==s1);//ref
+		System.out.println(s==s2);
+		System.out.println(s1==s);
+		System.out.println(s.equals(s1));//value
+		System.out.println(s.equals(s2));
+		System.out.println(s2.equals(s1));
+		
+		System.out.println(s instanceof String);
+		//System.out.println(s instanceof Integer);
+		System.out.println(s instanceof Object);
+		
+		System.out.println(LocalDate.now());
+		System.out.println(LocalDateTime.now());
+		System.out.println(Instant.now());
+		System.out.println((LocalDate.of(1990, 2, 12)));
+ ------------------------------------------------------------------------
+ 
+[?10/?31/?2018 5:01 PM]  N, Kathiresan:  
+package com.cg.frs.dao;
+
+public class Test2 extends Test implements IContract{
+
+	public static void main(String[] args) {
+		IContract i=new Test2();
+		i.disp();
+		IContract.getDetails();
+		System.out.println(IContract.A);
+		i.getData();
+		
+		Test2 t=new Test2();
+		t.disp();
+		t.getData();
+				
+	}
+	
+
+	@Override
+	public void disp() {
+	System.out.println("display output");	
+	}
+	
+
+} 
+package com.cg.frs.dao;
+
+public interface IContract {
+
+	public abstract void disp();
+	public static final int A=90;
+	//from j8
+	default void getData(){
+		System.out.println("default method");
+	}
+	static void getDetails(){
+		System.out.println("static method");
+	}
+	
+	
+} 
+ 
+---------------------------------------------------------------------------------
+->throwable
+->exception
+             *runtimeException
+                     -Arithmetic Exception
+                     -Null Pointer Exception 
+                     -Array Index Out Bound Exception
+             *IOException
+             *sqlException
+
+->errors
+->checked-programer need to handled
+             try and catch,finally,and also throws,throw
+
+->unchecked-programer(optional) or system(jvm)
+TRY{}
+CATCH{}
+TRY {}CATCH{}CATCH{}
+TRY CATCH{} CATCH{} FINALLY{}
+TRY{BUF READ} // FROM JAVA 8 INSTEAD OF FINALLY CLASS TRY WITH RESOURSES
+CATCH
+---------------------------------------------------------------------------------------------------------
+[?10/?31/?2018 5:54 PM]  N, Kathiresan:  
+	try{
+			int a=9/0;
+			System.out.println("in try");
+		}
+		catch(Exception e)
+		{
+			try{
+			throw e;	
+			}catch(Exception e1){
+			System.out.println("in catch 2");
+			}
+			System.out.println("in catch");
+		}
+		finally{
+			System.out.println("in finally");
+
+		} 
+ 
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+LESSON :11
+COLLECTION HIRERARCHY
+-------------------------------------------------------------------------------
