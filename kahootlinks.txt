@@ -1,0 +1,99 @@
+
+
+From: N, Kathiresan [mailto:kathiresan.n@capgemini.com] 
+Sent: Thursday, November 01, 2018 11:22 AM
+To: SOUDEY, ROHAN
+Cc: Sachdeva, Kritika; Ponraj, Balakrishnan
+Subject: kahoot quiz
+
+Hi ,
+
+PFB the kahoot quiz
+              
+Sub-topic name	no. of quiz	links for quiz
+web basics	2	https://create.kahoot.it/#quiz/0056521f-dfec-48fc-b8ff-9064d9239d4e
+
+		https://create.kahoot.it/#quiz/e3767e7d-a784-4c40-a301-8bb6dd829b3e
+
+Jpa-Hibernate	1	https://create.kahoot.it/#quiz/a1e10731-09d9-432c-bb27-18d284ea2a7c
+
+ 	 	 
+jsp day 2	 	https://create.kahoot.it/#quiz/9976f92f-e861-4692-bca5-b11d663d304f
+
+ 	 	 
+servlet - session management	1	https://create.kahoot.it/#quiz/adebd01d-75c4-4767-b840-83bb5ac7d877
+
+Jsp day 1	1	https://create.kahoot.it/#quiz/ccf506c0-2f93-4872-8d48-ecb8e4dfa93b
+
+hibernate day 1	1	https://create.kahoot.it/#quiz/998c59d4-e756-4ad2-9d9c-0316067be8eb
+
+angular js	3	https://create.kahoot.it/#quiz/3cee122d-9ebd-4a8e-a530-23b0b786df2b
+
+		https://create.kahoot.it/#quiz/7dede755-2cd9-4b26-afbd-7687373fd08d
+
+		https://create.kahoot.it/#quiz/3cee122d-9ebd-4a8e-a530-23b0b786df2b
+
+Spring mvc	1	https://create.kahoot.it/#quiz/5d709ec1-7488-43ad-a4aa-0aea2b5bb65c
+
+html 5	1	https://create.kahoot.it/#quiz/9f976b69-119c-43a4-ae21-5501574e99c0 
+
+Javascript day 1	4	https://create.kahoot.it/#quiz/3c08cf66-0cf0-493e-84b5-527e1aea2259
+
+Javascript day 2		https://create.kahoot.it/#quiz/e0afb52f-0108-448b-aa5d-e52500c4c0bd
+
+Javascript day 3		https://create.kahoot.it/#quiz/ce82a5c6-5b1a-41a1-82fa-5ff0979933ac
+
+Javascript day 4		https://create.kahoot.it/#quiz/c95617f5-53ec-4443-be5c-0f521cd21efa
+
+ 	 	 
+ 	 	No quiz available
+ 	 	 
+Spring IOC	1	https://create.kahoot.it/#quiz/b461b410-f693-4bab-8f30-b726e6c50bbd
+
+Spring mvc	1	https://create.kahoot.it/#quiz/b461b410-f693-4bab-8f30-b726e6c50bbd
+
+Angular JS	1	https://create.kahoot.it/#quiz/9fd105e7-40cc-4ad8-b0fb-581d480743b4
+
+ 	 	 
+ 	 	No quiz available
+ 	 	No quiz available
+ 	 	 
+core java	8	https://create.kahoot.it/#quiz/5ddc5c63-c402-462b-91c7-5f0461ec9e32
+
+		https://create.kahoot.it/#quiz/434d0d93-9dda-484d-8baa-3e79151b6d7c
+
+		https://create.kahoot.it/#quiz/5fc7a0d2-4668-4ea0-ba4e-3670a4d6d4d1
+
+		https://create.kahoot.it/#quiz/e2175afa-c841-4ee6-b40e-23134a082292
+
+		https://create.kahoot.it/#quiz/8f9598d7-9f05-4e13-ad3f-da423cd618fc
+
+		https://create.kahoot.it/#quiz/663e1d49-e09e-4568-a0ee-8b84ab124a84
+
+		https://create.kahoot.it/#quiz/e1b51caf-ddd2-4d08-ab01-258109474900
+
+		https://create.kahoot.it/#quiz/cf5008a5-8faa-4137-9417-74f9ee00e5c0
+
+ 	 	 
+Pseudocode	1	https://create.kahoot.it/#quiz/5ff57021-23dc-4037-ab26-adf3fde7d19a
+
+Oracle	2	https://create.kahoot.it/#quiz/7087a35d-4f47-4c97-920d-0da10fa1d172
+
+		https://create.kahoot.it/#quiz/11f701c3-c525-46b7-9170-5a04665c3eb8
+
+UML	1	https://create.kahoot.it/#quiz/1aa40deb-6c46-4eb3-81fa-4dba69af230e
+
+
+
+
+
+Kathiresan N
+Consultant  | Learning & Development | HR
+ 
+Capgemini Technology Services India Ltd | SIPCOT, Chennai
+Tel.: +91 44 3303 2181 | Extn: 4492181 | Mob.: + 91 96 29 77 47 53
+www.capgemini.com
+ 
+B45 & B46, SIPCOT IT Park, OMR, Siruseri,
+Chennai - 603 103. India
+
