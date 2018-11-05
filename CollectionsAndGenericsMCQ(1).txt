@@ -1,0 +1,405 @@
+
+/****************************************** Collections *******************************************************************************************/	
+
+	1. Map is a part of collection.
+	
+		a. true
+		b. false
+
+		
+	2. Algorithm such as searching and sorting is a part of ____________ framework.
+	
+		a. Set
+		b. Collection
+		c. Map
+		d. Spring
+
+		
+	3. what is not true about Collection?
+	
+		a. Increases programming effort
+		b. increases performance. 
+		c. Foster software reuse. 
+		d. Provides interoparibility between unrelated APIs. 
+
+		
+	4. Map does not extends Collection.
+	
+		a. true
+		b. false
+
+		
+	5. Collection is a?
+	
+		a. class. 
+		b. interface. 
+		c. method. 
+		d. constructor. 
+
+		
+	6. Set maintains unique elements in which order?
+	
+		a. insertion order. 
+		b. random order. 
+		c. Sorted order. 
+		d. descending order. 
+
+		
+	7. SortedMap Interface is a Map that maintains its mappings in __________ key order. 
+	
+		a. Random
+		b. descending. 
+		c. ascending. 
+		d. insertion. 
+
+		
+	8. Which of these packages contain all the collection classes?
+	
+		a. java.lang
+		b.  java.util
+		c.  java.net
+		d.  java.awt
+
+		
+	9. What is the output of this program?
+
+		class Array 
+		{
+			public static void main(String args[]) 
+			{
+				int array[] = new int [5];
+				for (int i = 5; i > 0; i--)
+					array[5-i] = i;
+				Arrays.fill(array, 1, 4, 8);
+				for (int i = 0; i < 5 ; i++)
+					System.out.print(array[i]);
+			}
+		}
+
+		a. 12885
+		b. 12845
+		c. 58881
+		d. 54881
+
+	
+	10. what will be the output of the following code?
+	
+		public class CollectionListEx {
+			public static void main(String[] args) {
+				List li=null;
+				li=new ArrayList();
+				li.add(55);
+				li.add(11);
+				li.add(03);
+				li.add(947659);
+				Iterator it = li.iterator();
+				for(Object a : li)
+				{
+					System.out.println(a);
+				}
+				while(it.hasNext())
+				{
+					System.out.println("this is in while loop: "+it.next());
+				}
+			}
+		}
+
+		a. 03,11.55,947659
+		b. 947659,55.11,03
+		c. 55,11,03,947659
+		d. 55,11,947659,03
+
+		
+	11.
+	
+		public class TreeSet1 
+		{
+			public static void main(String[] args) {
+				SortedSet s=null;
+				s=new TreeSet();
+				s.add("one");
+				s.add("ona");
+				s.add("two");
+				s.add("three");
+				s.add(null);will throw null pointer exception
+				System.out.println(s);
+			}
+		}
+
+		a. ona, one, three, two
+		b. will throw null pointer exception
+		c. one,two,three,ona.
+		d. ona,one,two,three.
+
+		
+	12. Vector is __________?
+	
+		a. Sorted
+		b. Unsorted
+		c. Synchronized.
+		d. Unsynchronized
+
+		
+	13.
+	
+		public class ClasssSet {
+			public static void main(String...args)
+			{
+				List l=null;
+				l=new ArrayList();
+				l.add(null);
+				l.add(null);
+				l.add("JEE");
+				
+				System.out.println(l.size());
+				
+			}
+		}
+
+		a. 1
+		b. 2
+		c. 3
+		d. 0
+
+		
+	14. If you attempt to insert duplicate value in Set it will...
+
+		a. get added.
+		b. return false
+		c. return true
+		d. error
+
+		
+	15. which is a Comparetor method?
+		
+		a. int compare()
+		b. int compare(object ob1)
+		c. int compare(object ob1,object ob2)
+		d. int compare(int ob1,int ob2)
+
+		
+	16. int compareTo(object o) is a method of ?
+
+		a. comparator class
+		b. compareable class
+		c. comparator interface
+		d. compareable interface
+
+		
+	17. HashMap gives
+
+		a. ordered and sorted map.
+		b. unordered and unsorted map.
+		c. random and synchronised map.
+		d. sorted and unsynchronised map.
+
+		
+	18. Differance between HashMap and HashTable is that
+	
+		a. HashMap is synchronised
+		b. HashTable is synchronised
+		c. HashMap is unsynchronised
+		d. HashTable is Unsynchronised
+
+		
+	19. 
+	
+			TreeSet treeset=new TreeSet();
+			treeset.add("one");
+			treeset.add("two");
+			treeset.add("three");
+			treeset.add("one");
+			treeset.add("four");
+			Iterator it=treeset.iterator();
+			while(it.hasNext())
+			System.out.println(it.next()+" ");
+			
+	output of following program is?
+
+		a. Compilation Error
+		b. four three two one
+		c. one two three one four
+		d. four one three two
+
+		
+	20.
+			Set treeset=new TreeSet();
+			treeset.add("2");
+			treeset.add("3");
+			treeset.add("1");
+			Iterator it=treeset.iterator();
+			while(it.hasNext())
+			System.out.println(it.next()+" ");
+			
+	output of following program is?
+
+		a. The before() method will print 1 2	
+		b. The before() method will print 1 2 3
+		c. The before() method will not compile
+		d. The before() method will throw an exception at runtime
+
+		
+/****************************************** Generics *******************************************************************************************/	
+		
+		
+	21.what does <T> denotes?
+	
+		a. T denotes object of any type
+		b. T denotes instance of any type
+		c. T denotes instance of any reference type
+		d. T denotes reference of any type
+
+		
+	22.	
+		List myIntegerlist=new LinkedList();//line 1
+		myIntegerlist.add(new Integer(0));//line 2
+		Integer intObj=myIntegerlist.iterator().next(); //line 3
+
+		a. Line 3 will give error
+		b. Line 2 will give error
+		c. no error
+		d. runtime error	
+
+		
+	23. Biggest achivement of generics is to
+
+		a. avoid exception
+		b. avoid error
+		c. less line of codes
+		d. avoid runtime exceptions	
+		
+		
+	24.		
+		ArrayList<Integer> ai=new ArrayList<Integer>();
+		ArrayList<Object> ao=ai;//line 1
+		ao.add(new Object());//line 2
+		Integer i=ao.get(0);//line 3
+		
+		Output of the following code is
+		
+		a. no error
+		b. compilation error at line 1
+		c. compilation error at line 3
+		d. program runs but doesnot give any output
+		e. compilation error at line 1 and 3
+
+		
+	25. Generics was added in Java to provide _______________ type checking.
+		
+		a. transalation-time 
+		b. run-time 
+		c. compile-time 
+		d. None of the above
+
+		
+	26. Generics enables us to create a ______________.
+		
+		a. parameterized class
+		b. parameterized Method
+		c. parameterized interface
+		d. None of the above
+		
+		
+			
+	27. Use of generics enables ______________.
+		
+		a. stricter compiler check 
+		b. sub-typing
+		c. explicit Typecasting
+		d. implicit Typecasting	 
+		
+		
+	28. Which of the following reference types cannot be generic?
+		
+		a. Inner class
+		b. Interface
+		c. Anonymous inner class 
+		d. All of the mentioned
+
+		
+	29. Which of these type parameters is used for a generic methods to return and accept a number?
+		
+		a. K
+		b. N 
+		c. T
+		d. V
+		
+		
+	30. If a method is created to accept argument of List<Object>,then which of the following are valid options to pass?
+
+		a.List<Object>
+		b.List<Integer>
+		c.List<String>
+		d.All of the above	
+		
+		
+	31. what does <?> denotes?
+	
+		a.lower bound object of type T
+		b.object of any type
+		c.upper bound object of type T
+		d.Instance of any type
+
+		
+	32. Generic class can have multiple type parameters. 
+		
+		a. true
+		b. false
+		
+		
+		
+/***************************************** Answers *******************************************************/ 		
+		
+
+	ANSWERS:
+
+	1. False
+	2. Collection
+	3. Increases programming effort.
+	4. true
+	5. interface
+	6. random order.
+	7. ascending.
+	8. java.util
+	9. 58881
+	10. 55,11,03,947659
+	11. will throw null pointer exception
+	12. Synchronized.
+	13. 3
+	14. return false
+	15. int compare(object ob1,object ob2)
+	16. compareable interface
+	17. unordered and unsorted map.
+	18. HashTable is synchronised
+	19. four one three two
+	20. The before() method will not compile
+	21. T denotes instance of any reference type
+	22. Line 3 will give error
+	23. avoid runtime exceptions	
+	24. compilation error at line 1 and 3
+	25. compile-time
+	26. parameterized class
+	27. stricter compiler check
+	28.	Anonymous inner class 
+	29.	N
+	30. List<Object>	
+	31. object of any type	
+	32. true
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
